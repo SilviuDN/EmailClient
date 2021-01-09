@@ -21,20 +21,20 @@ public class ViewFactory {
     public void showLoginWindow(){
         System.out.println("showLoginWindow called.");
 
-//        BaseController controller = new LoginWindowController(emailManager, this, "LoginWindow.fxml");
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(controller.getFxmlName()));
-//        fxmlLoader.setController(controller);
-//        Parent parent;
-//        try{
-//            parent = fxmlLoader.load();
-//        }catch(IOException e){
-//            e.printStackTrace();
-//            return;
-//        }
-//
-//        Scene scene = new Scene(parent);
-//        Stage stage = new Stage();
-//        stage.setScene(scene);
-//        stage.show();
+        BaseController controller = new LoginWindowController(emailManager, this, "LoginWindow.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(controller.getFxmlName()));
+        fxmlLoader.setController(controller);
+        Parent parent;
+        try{
+            parent = fxmlLoader.load();
+        }catch(IOException e){
+            e.printStackTrace();
+            return;
+        }
+
+        Scene scene = new Scene(parent);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     }
 }
