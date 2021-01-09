@@ -9,7 +9,6 @@
 <AnchorPane prefHeight="300.0" prefWidth="500.0"
             xmlns="http://javafx.com/javafx/11.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            <!-- fx:controller="com.test.controller.LoginWindowController" -->
             >
     <children>
         <Button layoutX="205.0" layoutY="182.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="43.0" prefWidth="90.0" text="Login" />

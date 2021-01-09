@@ -21,7 +21,7 @@ public class ViewFactory {
     public void showLoginWindow(){
         System.out.println("showLoginWindow called.");
 
-        BaseController controller = new LoginWindowController(emailManager, this, "LoginWindow.fxml");
+        BaseController controller = new LoginWindowController(emailManager, this, "LoginWindowView.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(controller.getFxmlName()));
         fxmlLoader.setController(controller);
         Parent parent;
