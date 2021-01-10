@@ -2,6 +2,7 @@ package com.test.controller;
 
 import com.test.EmailManager;
 import com.test.view.ViewFactory;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TreeView;
@@ -23,5 +24,13 @@ public class MainWindowController extends BaseController{
 
     @FXML
     void optionsAction() {
+        viewFactory.showOptionsWindow();
     }
+
+    @FXML
+    void addAccountAction() {
+        viewFactory.showLoginWindow();
+    }
+
+
 }
